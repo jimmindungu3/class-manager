@@ -1,0 +1,49 @@
+{
+  "students": [
+    {
+      "id": 100,
+      "firstName": "John",
+      "lastName": "Doe",
+      "admNo": "2023001",
+      "marks": {
+        "mathematics": 95,
+        "science": 88,
+        "history": 75,
+        "english": 92,
+        "art": 78
+      }
+    },
+    {
+      "id": 101,
+      "firstName": "Jane",
+      "lastName": "Smith",
+      "admNo": "2023002",
+      "marks": {
+        "mathematics": 88,
+        "science": 92,
+        "history": 78,
+        "english": 85,
+        "art": 90
+      }
+    },
+    {
+      "id": 103,
+      "firstName": "Alice",
+      "lastName": "Johnson",
+      "admNo": "2023003",
+      "marks": {
+        "mathematics": 90,
+        "science": 85,
+        "history": 92,
+        "english": 79,
+        "art": 84
+      }
+    },
+    {
+      "firstName": "James",
+      "lastName": "Ndungu",
+      "admNo": "2023004",
+      "id": 104
+    }
+  ]
+}
