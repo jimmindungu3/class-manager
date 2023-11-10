@@ -1,14 +1,15 @@
 import { useState } from "react";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 function StudentForm() {
-  const [firsName, setFirstName] = useState("");
+  const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
   const [admNo, setAdmNo] = useState("");
 
   function handleSubmit(event) {
     event.preventDefault();
     const newStudent = {
-      firstName: firsName,
+      firstName: firstName,
       lastName: lastName,
       admNo: admNo,
     };
@@ -31,8 +32,7 @@ function StudentForm() {
       .then((data) => {
         setFirstName("");
         setLastName("");
-        setAdmNo();
-        
+        setAdmNo("");
       })
       .catch((error) => {
         console.log(error);
@@ -40,33 +40,44 @@ function StudentForm() {
   }
 
   return (
-    <div>
-      <form action="#" onSubmit={handleSubmit}>
-        <label htmlFor="firstName">First Name:</label>
-        <input
-          type="text"
-          placeholder="Enter first name"
-          value={firsName}
-          onChange={(e) => setFirstName(e.target.value)}
-        />
+    <div className="container mt-4">
+      <form onSubmit={handleSubmit}>
+        <div className="mb-3">
+          <label htmlFor="firstName" className="form-label">First Name:</label>
+          <input
+            required
+            type="text"
+            className="form-control"
+            placeholder="Enter first name"
+            value={firstName}
+            onChange={(e) => setFirstName(e.target.value)}
+          />
+        </div>
 
-        <label htmlFor="LastName">Last Name:</label>
-        <input
-          type="text"
-          placeholder="Enter last name"
-          value={lastName}
-          onChange={(e) => setLastName(e.target.value)}
-        />
+        <div className="mb-3">
+          <label htmlFor="lastName" className="form-label">Last Name:</label>
+          <input
+            required
+            type="text"
+            className="form-control"
+            placeholder="Enter last name"
+            value={lastName}
+            onChange={(e) => setLastName(e.target.value)}
+          />
+        </div>
 
-        <label htmlFor="Adm No">Adm No: </label>
-        <input
-          type="number"
-          placeholder="Enter Adm No"
-          onChange={(e) => setAdmNo(e.target.value)}
-        />
+        <div className="mb-3">
+          <label htmlFor="admNo" className="form-label">Adm No:</label>
+          <input
+            required
+            type="number"
+            className="form-control"
+            placeholder="Enter Adm No"
+            onChange={(e) => setAdmNo(e.target.value)}
+          />
+        </div>
 
-        <button>Add Student</button>
-
+        <button type="submit" className="btn btn-primary">Add Student</button>
       </form>
     </div>
   );
