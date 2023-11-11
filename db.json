@@ -1,42 +1,16 @@
 {
   "students": [
     {
-      "id": 104,
-      "firstName": "Robert",
-      "lastName": "Wilson",
-      "admNo": "2023004",
-      "marks": {
-        "mathematics": 85,
-        "science": 89,
-        "history": 72,
-        "english": 87,
-        "art": 80
-      }
-    },
-    {
-      "id": 105,
-      "firstName": "Emily",
-      "lastName": "Brown",
-      "admNo": "2023005",
-      "marks": {
-        "mathematics": 78,
-        "science": 93,
-        "history": 86,
-        "english": 91,
-        "art": 88
-      }
-    },
-    {
       "id": 106,
       "firstName": "David",
       "lastName": "Davis",
       "admNo": "2023006",
       "marks": {
-        "mathematics": 91,
-        "science": 87,
-        "history": 83,
-        "english": 89,
-        "art": 82
+        "mathematics": "85",
+        "science": "69",
+        "history": "95",
+        "english": "35",
+        "art": "89"
       }
     },
     {
@@ -45,11 +19,11 @@
       "lastName": "Miller",
       "admNo": "2023007",
       "marks": {
-        "mathematics": 84,
-        "science": 90,
-        "history": 77,
-        "english": 88,
-        "art": 76
+        "mathematics": "90",
+        "science": "90",
+        "history": "90",
+        "english": "90",
+        "art": "90"
       }
     },
     {
@@ -129,12 +103,6 @@
         "english": 90,
         "art": 85
       }
-    },
-    {
-      "firstName": "james",
-      "lastName": "ndungu",
-      "admNo": "2023015",
-      "id": 114
     }
   ]
 }

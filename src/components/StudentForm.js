@@ -1,10 +1,10 @@
 import { useState } from "react";
-import "bootstrap/dist/css/bootstrap.min.css";
+
 
 function StudentForm() {
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
-  const [admNo, setAdmNo] = useState("");
+  const [admNo, setAdmNo] = useState();
 
   function handleSubmit(event) {
     event.preventDefault();
@@ -32,7 +32,7 @@ function StudentForm() {
       .then((data) => {
         setFirstName("");
         setLastName("");
-        setAdmNo("");
+        setAdmNo();
       })
       .catch((error) => {
         console.log(error);
@@ -41,6 +41,7 @@ function StudentForm() {
 
   return (
     <div className="container mt-4">
+      <h2>Register New Student</h2>
       <form onSubmit={handleSubmit}>
         <div className="mb-3">
           <label htmlFor="firstName" className="form-label">First Name:</label>
