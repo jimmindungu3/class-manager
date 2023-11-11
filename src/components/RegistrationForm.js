@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 
-function StudentForm() {
+function RegistrationForm() {
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
   const [admNo, setAdmNo] = useState();
@@ -84,4 +84,4 @@ function StudentForm() {
   );
 }
 
-export default StudentForm;
+// export default RegistrationForm;

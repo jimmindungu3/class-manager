@@ -1,18 +1,22 @@
 import React from "react";
-import StudentForm from "./components/StudentForm";
-import StudentList from "./components/StudentList";
-import NavBar from "./components/Navbar";
-import Home from "./components/Home"
+import { Routes, Route } from "react-router-dom";
+import HomePage from "./components/HomePage";
+import Navbar from "./components/Navbar";
+import { RegistrationForm } from "./components/RegistrationForm";
+// import StudentList from "./components/StudentList";
+
+
 
 function App() {
   return (
     <div>
-      <NavBar />
+      <Navbar />
       <div className="container mt-5">
         <div>
-          <Home />
-          <StudentForm />
-          <StudentList />
+          <Routes>
+            <Route path="/" element={<HomePage />} ></Route>
+            <Route path="/RegisterStudent" element={<RegistrationForm />} ></Route>
+          </Routes>
         </div>
       </div>
     </div>
