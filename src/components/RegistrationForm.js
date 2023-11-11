@@ -1,6 +1,5 @@
 import { useState } from "react";
 
-
 function RegistrationForm() {
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
@@ -13,8 +12,6 @@ function RegistrationForm() {
       lastName: lastName,
       admNo: admNo,
     };
-
-    // console.log(newStudent);
 
     fetch("http://localhost:8001/students", {
       method: "POST",
@@ -44,7 +41,9 @@ function RegistrationForm() {
       <h2>Register New Student</h2>
       <form onSubmit={handleSubmit}>
         <div className="mb-3">
-          <label htmlFor="firstName" className="form-label">First Name:</label>
+          <label htmlFor="firstName" className="form-label">
+            First Name:
+          </label>
           <input
             required
             type="text"
@@ -56,7 +55,9 @@ function RegistrationForm() {
         </div>
 
         <div className="mb-3">
-          <label htmlFor="lastName" className="form-label">Last Name:</label>
+          <label htmlFor="lastName" className="form-label">
+            Last Name:
+          </label>
           <input
             required
             type="text"
@@ -68,7 +69,9 @@ function RegistrationForm() {
         </div>
 
         <div className="mb-3">
-          <label htmlFor="admNo" className="form-label">Adm No:</label>
+          <label htmlFor="admNo" className="form-label">
+            Adm No:
+          </label>
           <input
             required
             type="number"
@@ -78,10 +81,12 @@ function RegistrationForm() {
           />
         </div>
 
-        <button type="submit" className="btn btn-primary">Add Student</button>
+        <button type="submit" className="btn btn-primary">
+          Add Student
+        </button>
       </form>
     </div>
   );
 }
 
-// export default RegistrationForm;
+export default RegistrationForm;
