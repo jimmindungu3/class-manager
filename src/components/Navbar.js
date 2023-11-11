@@ -1,13 +1,13 @@
 import React from 'react';
-import 'bootstrap/dist/css/bootstrap.min.css'; // Import Bootstrap CSS
-import './Navbar.css';
+import '../Navbar.css'
 
 const Navbar = () => {
   return (
-    <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav className="navbar navbar-expand-lg navbar-dark bg-primary">
       <div className="container">
         <a className="navbar-brand" href="#">
-          <img src="your-logo.png" alt="Logo" className="logo-img" />
+        <img src="../img/school.png" alt="Logo" className="logo-img" />
+
         </a>
         <button
           className="navbar-toggler"
