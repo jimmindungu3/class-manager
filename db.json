@@ -6,11 +6,11 @@
       "lastName": "Davis",
       "admNo": "2023006",
       "marks": {
-        "mathematics": "85",
-        "science": "69",
-        "history": "95",
-        "english": "35",
-        "art": "89"
+        "mathematics": "89",
+        "science": "89",
+        "history": "89",
+        "english": "89",
+        "art": "78"
       }
     },
     {
@@ -19,11 +19,11 @@
       "lastName": "Miller",
       "admNo": "2023007",
       "marks": {
-        "mathematics": "90",
-        "science": "90",
-        "history": "90",
-        "english": "90",
-        "art": "90"
+        "mathematics": "85",
+        "science": "89",
+        "history": "78",
+        "english": "96",
+        "art": "52"
       }
     },
     {
@@ -102,6 +102,19 @@
         "history": 84,
         "english": 90,
         "art": 85
+      }
+    },
+    {
+      "firstName": "Robert",
+      "lastName": "Anorlds",
+      "admNo": "2023015",
+      "id": 114,
+      "marks": {
+        "mathematics": "89",
+        "science": "88",
+        "history": "66",
+        "english": "85",
+        "art": "70"
       }
     }
   ]

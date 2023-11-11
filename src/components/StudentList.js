@@ -85,6 +85,7 @@ function StudentList() {
             <th>History</th>
             <th>English</th>
             <th>Art</th>
+            <th>Action</th>
           </tr>
         </thead>
         <tbody>

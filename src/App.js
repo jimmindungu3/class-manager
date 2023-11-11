@@ -5,6 +5,8 @@ import Navbar from "./components/Navbar";
 import RegistrationForm from "./components/RegistrationForm";
 import StudentList from "./components/StudentList";
 import Analysis from "./components/Analysis";
+import Footer from "./components/Footer";
+
 
 function App() {
   return (
@@ -16,10 +18,11 @@ function App() {
             <Route path="/" element={<HomePage />} />
             <Route path="RegisterStudent" element={<RegistrationForm />} />
             <Route path="UploadMarks" element={<StudentList />} />
-            <Route path="Analysis" element={Analysis} />
+            <Route path="Analysis" element={<Analysis />} />
           </Routes>
         </div>
       </div>
+      <Footer />
     </div>
   );
 }
