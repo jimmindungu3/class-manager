@@ -1,0 +1,11 @@
+/* Navbar.css */
+.link-white {
+    font-weight: bolder;
+  color: white !important;
+  transition: transform 0.5s;
+}
+
+.link-white:hover {
+  transform: scale(1.1);
+  text-decoration: underline;
+}
